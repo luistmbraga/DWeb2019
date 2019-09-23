@@ -1,0 +1,130 @@
+
+
+header{
+    display: flex;
+    width: 100%;
+    background: #4c0013;
+    padding: 6em;
+}
+
+header h1{
+    text-align: center;
+    color: #daa520;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+footer{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background: #4c0013;
+    color: white;
+    font-family: Montserrate;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400i,900');
+
+
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.grid-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em; 
+}
+
+@media only screen and (min-width: 52em) {
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    }
+}
+
+.our-team {
+  background: white;
+  padding: 5em 0;
+  color: rgba(white, .6);
+}
+
+.team-description {
+  grid-column: span 1;
+}
+
+@media only screen and (min-width: 52em) {
+    .team-description{
+        grid-column: auto;
+        grid-row: span 1;
+        align-self: center;
+    }
+}
+
+.team-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5rem;
+  color: white;
+  margin-top: 0;
+  line-height: 1;
+}
+
+span {
+    display: block;
+    font-weight: 900;
+  }
+
+.team-member {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  
+img {
+    width: 100%;
+    display: block;
+}
+
+figcaption{
+    font-size: 0.8em;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 1em 0 2em 0;
+}
+
+.name {
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+ }
+
+ p{
+   text-align: center;
+ }
