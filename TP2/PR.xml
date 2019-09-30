@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PROJECT_RECORD SYSTEM "PR.dtd">
+<PROJECT_RECORD>
+    <INFO>
+        <KEY_NAME></KEY_NAME>
+        <TITLE></TITLE>
+        <SUBTITLE></SUBTITLE>
+        <BEGIN_DATE></BEGIN_DATE>
+        <END_DATE></END_DATE>
+        <SUPERVISOR></SUPERVISOR>
+    </INFO>
+    <WORKTEAM>
+        <MEMBER>
+            <NAME></NAME>
+            <EMAIL></EMAIL>
+        </MEMBER>
+    </WORKTEAM>
+    <ABSTRACT></ABSTRACT>
+    <DELIVERABLES>
+        <DELIVERABLE REF=""></DELIVERABLE>
+    </DELIVERABLES>
+    <RECORD_DATE></RECORD_DATE>
+</PROJECT_RECORD>

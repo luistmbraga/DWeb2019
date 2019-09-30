@@ -1,0 +1,16 @@
+Ficha 3 
+Exercício 6
+
+a)Qual o "IDENTI" dos arqueossítios do concelho de Amares.
+
+R: //IDENTI[../CONCEL=" Amares " and ..//TIPO[@ASSUNTO="arqueossitio"]]
+ 
+
+b)Quais os concelhos com arqueossítios registados.
+
+R: distinct-values(//CONCEL[../TIPO[@ASSUNTO="arqueossitio"]])
+
+
+c)Seleccione as descrições dos arqueossítios do concelho de Montalegre.
+
+R: //DESCRI[../CONCEL=" Montalegre " and ..//TIPO[@ASSUNTO="arqueossitio"]]
