@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP3</keyname>
+        <title>Trabalho Prático 3</title>
+        <subtitle>Transformações em XML</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>1 de Outubro de 2019</bdate>
+        <edate>8 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O <b>Extensible Stylesheet Language (XSL)</b> é uma família de linguagem usadas para processar
+            e  transformar documentos XML. Essa família divide-se em três partes: <u>XLS Transform (XSLT)</u>, 
+            <u>XSL Formatting Objects (XSL-FO)</u> e <u>XML Path Language (XPATH)</u>. A primeira, como o nome indica,
+            serve para aplicar transformações a ficheiros XML. A segunda é uma língua XML para especificar a formatação
+            visual de um documento XML e, por fim, a terceira que é usada para navegar num documento XML.
+        </p>
+        <p>
+            O trabalho é constituído por um ficheiro pr.xml, pr.xsl e pr.html, todos relativos à transformação (.xsl) 
+            do conteúdo (.xml) numa página web (.html) de um Project Record (pr). Esta tarefa também é composta 
+            pelo ficheiro arq.xsl, usado para a transformação dos 
+            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">Arqueossítios do Nordeste Português</xref> 
+            ,conteúdo utilizado em aulas anteriores, num conjunto de páginas web, formando um website. Estas páginas 
+            encontram-se na pasta website que também faz parte da entrega. Perfazendo no total um conjunto de quatro 
+            ficheiros e uma directoria. 
+        </p>
+        <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste conjunto de exercícios (Trabalho para casa nº3), como forma de consolidar a matéria relativa 
+            ao XSL dada em aula. Neste trabalho é dada uma ênfase acrescida ao XSLT, na medida em que é aplicado para transformar
+            XML em html.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3">TP3 files</deliverable>
+        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xml">Ficheiro XML (Project Record)</deliverable> -->
+        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xsl">Ficheiro XSL (Project Record)</deliverable> -->
+        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.html">Ficheiro HTML (Project Record)</deliverable> -->
+        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/arq.xsl">Ficheiro XSL(Arquessítios)</deliverable> -->
+        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/website/">Directoria website dos arqueossítios</deliverable> -->
+    </deliverables>
+</pr>
