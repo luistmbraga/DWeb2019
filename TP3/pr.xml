@@ -41,11 +41,10 @@
         </p>
     </abstract>
     <deliverables>
-        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3">TP3 files</deliverable>
-        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xml">Ficheiro XML (Project Record)</deliverable> -->
-        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xsl">Ficheiro XSL (Project Record)</deliverable> -->
-        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.html">Ficheiro HTML (Project Record)</deliverable> -->
-        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/arq.xsl">Ficheiro XSL(Arquessítios)</deliverable> -->
-        <!-- <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/website/">Directoria website dos arqueossítios</deliverable> -->
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xml">Ficheiro XML (Project Record)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.xsl">Ficheiro XSL (Project Record)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/pr.html">Ficheiro HTML (Project Record)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/arq.xsl">Ficheiro XSL(Arquessítios)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP3/website">Directoria website dos arqueossítios</deliverable>
     </deliverables>
 </pr>
