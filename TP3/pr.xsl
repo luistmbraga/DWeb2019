@@ -16,6 +16,9 @@
                     .center{
                     text-align: center;
                     }
+                    .bottom{
+                    margin-bottom: 2em;
+                    }
                 </style>
             </head>
             <body>
@@ -44,7 +47,7 @@
         </div>
         <hr/>
         <hr/>
-        <div class="w3-container">
+        <div class="w3-container bottom">
             <xsl:apply-templates select="deliverables"/>
         </div>
     </xsl:template>
@@ -164,7 +167,7 @@
     -->
     <xsl:template match="deliverable">
         <li>
-            <a href="{@path}"><xsl:apply-templates/></a>
+            <a href="{@path}" target="_blank"><xsl:apply-templates/></a>
         </li>
     </xsl:template>
     
