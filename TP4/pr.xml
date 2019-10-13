@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP4</keyname>
+        <title>Trabalho Prático 4</title>
+        <subtitle>Servidor de Ficheiros</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>8 de Outubro de 2019</bdate>
+        <edate>15 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O <b>Extensible Stylesheet Language (XSL)</b> é uma família de linguagem usadas para processar
+            e  transformar documentos XML. Essa família divide-se em três partes: <u>XLS Transform (XSLT)</u>, 
+            <u>XSL Formatting Objects (XSL-FO)</u> e <u>XML Path Language (XPATH)</u>. A primeira, como o nome indica,
+            serve para aplicar transformações a ficheiros XML. A segunda é uma língua XML para especificar a formatação
+            visual de um documento XML e, por fim, a terceira que é usada para navegar num documento XML.
+            O <b>O Node JS</b> é um interpretador de <b>JavaDcript</b> assíncrono. E tem o objectivo de permitir a criação de 
+            aplicações de alta escalabilidade (por exemplo, servidor web), permitindo a gestão de milhares de conexões e
+             eventos simultâneos numa única máquina física.
+        </p>
+        <p>
+            O trabalho é constítuido pelos ficheiros arq.xml (
+            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">dataset dos arqueossítios </xref>),  
+            arq2html.xsl (regras de transformação de um arqueossítio xml para html), 
+            index.html (página índice dos arqueossítios), index.xsl (regras de geração de index.html), pr.xml 
+            (manifesto xml do presente trabalho), pr.html (manifesto html do presente trabalho), server.js 
+            (código do servidor), xml-split.xsl (regras para geração do dataset de cada um dos arqueossítios), 
+            e pela directoria dataset (ficheiros xml resultantes da aplicação de xml-split.xsl a arq.xml).
+            Perfazendo no total um conjunto de 8 ficheiros e uma directoria.
+        </p>
+        <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste exercício (Trabalho para casa nº4),  como forma de consolidar a matéria 
+            dada em aula. O exercício consistia em <b>(1)</b> gerar a directoria dataset a partir do documento 
+            arq.xml, <b>(2)</b> elaborar uma stylesheet geral para cada arqueossítio (arq2html.xsl), <b>(3)</b> construir 
+            o ficheiro servidor.js de modo a responder com o respectivo conteúdo de dataset/arq... e <b>(4)</b>, se conseguisse, 
+            gerar um index, que permite a navegação para a página de cada arqueossítio.
+        </p>
+        <p>
+            O request do índice faz-se com "http://localhost:7777/0" e para os arqueossítios aplica-se o que foi feito em aula, 
+            ou seja, "http://localhost:7777/" + [1..122] .
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/pr.xml">Ficheiro XML (Project Record)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/pr.html">Ficheiro HTML (Project Record)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/arq.xml">Dataset (Todos os Arqueossítios)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/arq2html.xsl">Ficheiro XSL (Arquessítio singular)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/xml-split.xsl">Desagregador de Arqueossítios</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/index.xsl">Stylesheet para o índice</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/index.html">Página index dos arqueossítios</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/server.js">Servidor JavaScript</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP4/dataset">Directoria com os arqueossítios desagregados</deliverable>
+    </deliverables>
+</pr>

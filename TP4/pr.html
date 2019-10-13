@@ -1,0 +1,112 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Trabalho Prático 4</title>
+      <meta charset="UTF8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><style>
+                    .center{
+                    text-align: center;
+                    }
+                    .bottom{
+                    margin-bottom: 2em;
+                    }
+                </style></head>
+   <body>
+      <h1 class="center"><b>Project Record</b></h1>
+      <hr>
+      <table class="w3-table">
+         <tr>
+            <td><b>Keyname: </b>DAW1920_TP4
+            </td>
+            <td><b>Supervisor: </b><a target="_blank" href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a></td>
+         </tr>
+         <tr>
+            <td><b>Title: </b>Trabalho Prático 4
+            </td>
+            <td><b>Begin Date: </b>8 de Outubro de 2019
+            </td>
+         </tr>
+         <tr>
+            <td><b>Subtitle: </b>Servidor de Ficheiros
+            </td>
+            <td><b>End Date: </b>15 de Outubro de 2019
+            </td>
+         </tr>
+      </table>
+      <hr>
+      <hr>
+      <div class="w3-container">
+         <h3><b>Workteam:</b></h3>
+         <ol>
+            <li>a82088 - <a href="https://github.com/BragaMann" target="_blank">Luís Tiago Machado Braga</a> - <a href="mailto:a82088@alunos.uminho.pt">a82088@alunos.uminho.pt</a></li>
+         </ol>
+      </div>
+      <hr>
+      <hr>
+      <div class="w3-container">
+         <h3><b>Abstract:</b></h3>
+         <p>
+            O <b>Extensible Stylesheet Language (XSL)</b> é uma família de linguagem usadas para processar
+            e  transformar documentos XML. Essa família divide-se em três partes: <u>XLS Transform (XSLT)</u>, 
+            <u>XSL Formatting Objects (XSL-FO)</u> e <u>XML Path Language (XPATH)</u>. A primeira, como o nome indica,
+            serve para aplicar transformações a ficheiros XML. A segunda é uma língua XML para
+            especificar a formatação
+            visual de um documento XML e, por fim, a terceira que é usada para navegar num documento
+            XML.
+            O <b>O Node JS</b> é um interpretador de <b>JavaDcript</b> assíncrono. E tem o objectivo de permitir a criação de 
+            aplicações de alta escalabilidade (por exemplo, servidor web), permitindo a gestão
+            de milhares de conexões e
+            eventos simultâneos numa única máquina física.
+            
+         </p>
+         <p>
+            O trabalho é constítuido pelos ficheiros arq.xml (
+            <a href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml" target="_blank">dataset dos arqueossítios </a>),  
+            arq2html.xsl (regras de transformação de um arqueossítio xml para html), 
+            index.html (página índice dos arqueossítios), index.xsl (regras de geração de index.html),
+            pr.xml 
+            (manifesto xml do presente trabalho), pr.html (manifesto html do presente trabalho),
+            server.js 
+            (código do servidor), xml-split.xsl (regras para geração do dataset de cada um dos
+            arqueossítios), 
+            e pela directoria dataset (ficheiros xml resultantes da aplicação de xml-split.xsl
+            a arq.xml).
+            Perfazendo no total um conjunto de 8 ficheiros e uma directoria.
+            
+         </p>
+         <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste exercício (Trabalho para casa nº4),  como forma de consolidar a matéria
+            
+            dada em aula. O exercício consistia em <b>(1)</b> gerar a directoria dataset a partir do documento 
+            arq.xml, <b>(2)</b> elaborar uma stylesheet geral para cada arqueossítio (arq2html.xsl), <b>(3)</b> construir 
+            o ficheiro servidor.js de modo a responder com o respectivo conteúdo de dataset/arq...
+            e <b>(4)</b>, se conseguisse, 
+            gerar um index, que permite a navegação para a página de cada arqueossítio.
+            
+         </p>
+         <p>
+            O request do índice faz-se com "http://localhost:7777/0" e para os arqueossítios aplica-se
+            o que foi feito em aula, 
+            ou seja, "http://localhost:7777/" + [1..122] .
+            
+         </p>
+      </div>
+      <hr>
+      <hr>
+      <div class="w3-container bottom">
+         <h3><b>Deliverables:</b></h3>
+         <ol>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/pr.xml" target="_blank">Ficheiro XML (Project Record)</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/pr.html" target="_blank">Ficheiro HTML (Project Record)</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/arq.xml" target="_blank">Dataset (Todos os Arqueossítios)</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/arq2html.xsl" target="_blank">Ficheiro XSL (Arquessítio singular)</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/xml-split.xsl" target="_blank">Desagregador de Arqueossítios</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/index.xsl" target="_blank">Stylesheet para o índice</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/index.html" target="_blank">Página index dos arqueossítios</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/server.js" target="_blank">Servidor JavaScript</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TP4/dataset" target="_blank">Directoria com os arqueossítios desagregados</a></li>
+         </ol>
+      </div>
+   </body>
+</html>
