@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP5</keyname>
+        <title>Trabalho Prático 5</title>
+        <subtitle>Servidor NodeJs</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>15 de Outubro de 2019</bdate>
+        <edate>22 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O <b>O Node JS</b> é um interpretador de <b>JavaScript</b> assíncrono. E tem o objectivo de permitir a criação de 
+            aplicações de alta escalabilidade (por exemplo, servidor web), permitindo a gestão de milhares de conexões e
+            eventos simultâneos numa única máquina física.
+        </p>
+        <p>
+            O trabalho é composto pela pasta stylesheets onde se encontram os ficheiros .css aplicam transformações à interface.
+            Pelos ficheiros erro.pug, index.pug e layout.pug, que definem a estrutura html da página. O ficheiro gestaotarefas.js, 
+            onde está o código relativo ao servidor NodeJs. O ficheiro package-lock.json e o ficheiro tarefas.json onde neste serão
+            guardados os dados, servindo de base de dados. E o pr.xml e pr.html, que são relativos ao manifesto deste trabalho.
+        </p>
+        <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste exercício (Trabalho para casa nº5),  como forma de consolidar a matéria 
+            dada em aula. O exercício consistia desenhar uma simples página (única) de Gestão de Tarefas que possui as 
+            funcionalidades de listar e inserir tarefas. Para tal, tinha-se de definir todo o html para a formatação das páginas 
+            e um servidor que respondesse a pedidos. Nomeadamente a um GET da lista e a um POST de uma nova tarefa. Os dados relativos 
+            às tarefas serão guardados no ficheiro tarefas.json.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/gestaotarefas.js">Servidor de Gestão de Tarefas (NodeJs)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/tarefas.json">Base de Dados de Tarefas (json)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/erro.pug">Erro (pug)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/index.pug">Index (pug)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/layout.pug">Layout (pug)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/stylesheets">Pasta com as Stylesheets (CSS)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/package-lock.json">Package-lock (json)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/pr.xml">Manifesto (xml)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP5/pr.html">Manifesto (html)</deliverable>
+    </deliverables>
+</pr>

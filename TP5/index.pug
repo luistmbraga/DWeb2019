@@ -1,0 +1,31 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h1.center Gestão de Tarefas
+            .w3-container
+                h3 
+                    b Inserir Tarefa
+                form.w3-container(action='/tarefa' method='POST')
+                    label.w3-blue-gray
+                        b Descrição
+                    input.w3-input.w3-border.w3-light-grey.bottom-space(type="text" name='descricao')
+                    label.w3-blue-gray
+                        b Data Limite
+                    input.w3-input.w3-border.w3-light-grey.bottom-space(type="text" name='datalimite')
+                    input.w3-btn.w3-blue-grey(type="submit" value='Enviar')
+            hr
+            .w3-container
+                h3 
+                    b Lista de Tarefas
+                table.w3-table-all.bottom-one
+                    tr
+                        th Tarefa
+                        th Data Limite
+                    each al in lista
+                        tr 
+                            td= al.descricao
+                            td= al.datalimite
+            footer.w3-container.w3-blue-gray
+                address.center Gerado por Gestão de Alunos App
