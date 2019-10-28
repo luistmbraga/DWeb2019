@@ -1,0 +1,22 @@
+extends layout
+block content
+    .w3-container
+      .w3-container
+          h1
+            b Arquivo Sonoro de Ernesto Veiga de Oliveira
+          a.w3-blue-grey.w3-square.w3-button(href= "/inserir") Inserir Nova Música
+          hr
+          .w3-card-4
+            table.w3-table-all
+                tr
+                    th Título
+                    th Operações
+                each a, index in lista
+                    tr
+                        td= a.tit
+                        td
+                            button.w3-button.w3-circle.w3-blue-grey(onclick="apagaItem('" + index + "')") Apagar
+                            a.w3-blue-grey.w3-circle.w3-button(name=index href= "/" + index) Detalhes
+                            a.w3-blue-grey.w3-circle.w3-button(href= "/alterar/" + index) Alterar
+      footer.w3-container
+          address Gerado por Trabalho Prático 6 App

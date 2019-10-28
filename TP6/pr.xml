@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP6</keyname>
+        <title>Trabalho Prático 6</title>
+        <subtitle>Servidor NodeJs com Express</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>22 de Outubro de 2019</bdate>
+        <edate>29 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste exercício (Trabalho para casa nº6),  como forma de consolidar a matéria 
+            dada em aula. O exercício consistia em desenvolver um servidor de páginas WEB em NodeJs, usando Express.
+            O servidor disponibiliza serviços <b>CRUD</b> (<b>C</b>reate <b>R</b>ead <b>U</b>pdate <b>D</b>elete) sobre 
+            o ficheiro <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq-son-EVO.xml">Arquivo Sonoro de Ernesto Veiga de Oliveira</xref>.
+        </p>
+        <p>
+            Após entrar na directoria <i>TP6App</i> executar <i>npm start</i> para correr o servidor, que atende na porta 3000.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP6/TP6App">Directoria com a implementação do servidor de páginas (Express)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP6/pr.html">Manifesto (html)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP6/pr.xml">Manifesto (xml)</deliverable>
+    </deliverables>
+</pr>

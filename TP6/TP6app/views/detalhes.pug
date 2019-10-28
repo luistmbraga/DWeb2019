@@ -1,0 +1,90 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Detalhes
+        .w3-card-4
+            table.w3-table-all
+                tr
+                    th Título
+                    td= musica.tit
+                if musica.prov
+                    tr
+                        th Província
+                        td= musica.prov
+                if musica.local
+                    tr
+                        th Local
+                        td= musica.local
+                if musica.musico
+                    tr
+                        th Músicos
+                            if musica.musico.prof || musica.musico.from || musica.musico.__text
+                                td
+                                    table.w3-table-all
+                                        tr
+                                            th Profissão
+                                                td= musica.musico.prof
+                                        tr
+                                            th Nome
+                                                td= musica.musico.__text
+                                        tr
+                                            th De onde é
+                                                td= musica.musico.from
+                            else
+                                td= musica.musico
+                if musica.inst
+                    tr
+                        th Instrumentos
+                        td= musica.inst
+                if musica.file
+                    tr
+                        th Ficheiros
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Formato
+                                        th Nome
+                                    each a in musica.file
+                                        tr
+                                            td= a._t
+                                            td= a.__text
+                if musica.duracao
+                    tr
+                        th Duração
+                        td= musica.duracao
+                if musica.obs
+                    tr
+                        th Observações
+                            td
+                                table.w3-table-all
+                                    each a in musica.obs
+                                        tr
+                                            th Observação
+                                                if a.file
+                                                    td
+                                                        table.w3-table-all
+                                                            tr
+                                                                th Ficheiros
+                                                                    td
+                                                                        table.w3-table-all
+                                                                            tr
+                                                                                th Formato
+                                                                                th Nome
+                                                                            each b in a.file
+                                                                                tr
+                                                                                    td= b._t
+                                                                                    td= b.__text
+                                                            tr 
+                                                                th Instrumentos Extra
+                                                                    td= a.intxt
+                                                            tr
+                                                                th Descrição
+                                                                    td= a.__text
+                                                else
+                                                    td= a
+        address.margin-tb
+            a(href="/#"+id) Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 6 App

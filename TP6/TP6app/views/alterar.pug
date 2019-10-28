@@ -1,0 +1,29 @@
+extends layout
+block content
+    .w3-container
+        h1
+            b Inserir Nova Música
+        .w3-card-4
+            .w3-container
+                form.w3-container(action='/'+id method='POST')
+                    label
+                        b Título
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='tit' value= musica.tit required)
+                    label
+                        b Província
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='prov' value= musica.prov required)
+                    label
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='local' value= musica.local)
+                    label
+                        b Duração
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='duracao' value= musica.duracao)
+                    label
+                        b Instrumentos
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='inst' value= musica.inst)
+                    
+                    input.w3-btn.w3-blue-grey(type="submit" value='Enviar')
+        address.margin-tb
+            a(href="/#"+id) Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 6 App
