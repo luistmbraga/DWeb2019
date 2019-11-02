@@ -1,0 +1,24 @@
+extends layout
+block content
+    .w3-container
+      .w3-container
+        h1
+            b Filmes
+        a.w3-blue-grey.w3-square.w3-button(href= "/filmes/inserir") Inserir Novo Filme
+        hr
+        .w3-card-4
+            table.w3-table-all
+                tr
+                    th Título
+                    th Ano
+                    th Operações
+                each a in lista
+                    tr
+                        td= a.title
+                        td= a.year
+                        td
+                            a.w3-blue-grey.w3-circle.w3-button(name=a._id href= "/filmes/" + a._id) Detalhes
+                            button.w3-button.w3-circle.w3-blue-grey(onclick="apagaItem('" + a._id + "')") Apagar
+                            a.w3-blue-grey.w3-circle.w3-button(href= "/filmes/alterar/" + a._id) Alterar
+      footer.w3-container
+          address Gerado por Trabalho Prático 7 App

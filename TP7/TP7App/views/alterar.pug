@@ -1,0 +1,39 @@
+extends layout
+block content
+    .w3-container
+        h1
+            b Alterar Filme
+        each filme in lista
+            .w3-card-4
+                .w3-container
+                    if filme.title
+                        label
+                            b Título
+                        input.w3-input.w3-border.w3-light-grey(type="text" id='title' value=filme.title  required)
+                    if filme.year
+                        label
+                            b Ano
+                        input.w3-input.w3-border.w3-light-grey(type="text" id='year' value=filme.year required)
+                    if filme.cast
+                        label
+                            b Elenco
+                        .w3-ul(id="cast")
+                            each cast in filme.cast
+                                li
+                                    input.w3-input.w3-border.w3-light-grey(type="text" id='year' value=cast)  
+                        a.w3-blue-grey.w3-square.w3-button.margin-bottom(href="#" onclick="addFields('cast')") Adicionar ator
+                        br
+                    if filme.genres
+                        label
+                            b Géneros
+                        .w3-ul(id="genres")
+                            each genre in filme.genres
+                                li
+                                    input.w3-input.w3-border.w3-light-grey(type="text" id='year' value=genre)  
+                        a.w3-blue-grey.w3-square.w3-button.margin-bottom(href="#" onclick="addFields('genres')") Adicionar Género
+                        br
+                    a.w3-btn.w3-blue-grey(onclick="adicionaItem('put','"+filme._id+"')" ) Enviar
+            address.margin-tb
+                a(href="/filmes/#"+filme._id) Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 7 App

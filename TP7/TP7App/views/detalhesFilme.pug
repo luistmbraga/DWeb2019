@@ -1,0 +1,35 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Detalhes
+        each filme in lista
+            .w3-card-4
+                table.w3-table-all
+                        if filme.title
+                            tr
+                                th Título
+                                td= filme.title
+                        if filme.year
+                            tr
+                                th Ano
+                                td= filme.year
+                        if filme.cast.length > 0
+                            tr
+                                th Elenco
+                                td
+                                    ul
+                                        each a in filme.cast
+                                            li= a
+                        if filme.genres.length > 0
+                            tr
+                                th Géneros
+                                td
+                                    ul
+                                        each a in filme.genres
+                                            li= a
+            address.margin-tb
+                    a(href="/filmes/#"+filme._id) Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 7 App
