@@ -3,7 +3,7 @@
     <metadata>
         <keyname>DAW1920_TP8</keyname>
         <title>Trabalho Prático 8</title>
-        <subtitle>Servidor NodeJs</subtitle>
+        <subtitle>Ficha dweb2019-e2</subtitle>
         <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
         <bdate>5 de Novembro de 2019</bdate>
         <edate>12 de Novembro de 2019</edate>
@@ -25,7 +25,7 @@
             , desenvolvendo um servidor de páginas WEB em NodeJs, usando Express
             com uma ligação a uma base dados MongoDB. Até agora muito semelhante ao exercício anterior. Contudo, desta 
             vez a arquitectura foi melhorada e o acesso à base de dados não é feito directamente pela View. Agora, 
-            os pedidos chegados da View são encaminhados para um router que por sua vez realiza os em que é necessário 
+            os pedidos chegados da View são encaminhados para um router que por sua vez realiza os pedidos em que é necessário 
             aceder à base de dados a um outro router, diminuindo assim o acoplamento e aumentado a segurança. 
         </p>
         <p>
