@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP8</keyname>
+        <title>Trabalho Prático 8</title>
+        <subtitle>Servidor NodeJs</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>5 de Novembro de 2019</bdate>
+        <edate>12 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            No âmbito da unidade curricular de <b>Desenvolvimento de Aplicações WEB (DAW)</b> foi-nos proposto a 
+            resolução deste exercício (Trabalho para casa nº8), como forma de consolidar a matéria 
+            dada em aula. O exercício consistia em resolver o exercício 1 da 
+            <xref url="http://www4.di.uminho.pt/~jcr/AULAS/didac/RepFichas/site/fichas/dweb2019-e2.html">Ficha dweb2019-e2</xref> 
+            , desenvolvendo um servidor de páginas WEB em NodeJs, usando Express
+            com uma ligação a uma base dados MongoDB. Até agora muito semelhante ao exercício anterior. Contudo, desta 
+            vez a arquitectura foi melhorada e o acesso à base de dados não é feito directamente pela View. Agora, 
+            os pedidos chegados da View são encaminhados para um router que por sua vez realiza os em que é necessário 
+            aceder à base de dados a um outro router, diminuindo assim o acoplamento e aumentado a segurança. 
+        </p>
+        <p>
+            Após entrar na directoria <i>TP8App</i> executar <i>npm start</i> para correr o servidor, que atende na porta 3000.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP8/TP8App">Directoria com a implementação do servidor de páginas (Express)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP8/pr.html">Manifesto (html)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP8/pr.xml">Manifesto (xml)</deliverable>
+    </deliverables>
+</pr>

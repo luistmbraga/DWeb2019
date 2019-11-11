@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Premios Nobel
+    table.w3-table-all
+      tr
+          th Categoria
+          th Ano
+          th Detalhes
+      each premio in lista
+          tr
+              td= premio.category
+              td= premio.year
+              td
+                  a(href="/prizes/" + premio._id) Detalhes
+    address.margin-tb
+          a(href="http://localhost:3000/") Voltar à página inicial
+    footer.w3-container
+          address Gerado por Trabalho Prático 8 App
+                        

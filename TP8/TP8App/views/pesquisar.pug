@@ -1,0 +1,19 @@
+extends layout
+block content
+    .w3-container
+        h1
+            b Pesquisar
+        .w3-card-4
+            .w3-container
+                form.w3-container(action='/prizes' method='GET')
+                    label
+                        b Categoria
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='categoria' required)
+                    label
+                        b Ano
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='data')                    
+                    input.w3-btn.w3-blue-grey(type="submit" value='Procurar')
+        address.margin-tb
+            a(href="http://localhost:3000/") Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 8 App

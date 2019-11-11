@@ -1,0 +1,21 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Laureados
+        .w3-card-4
+            table.w3-table-all
+                tr
+                    th Nome
+                    th Categoria
+                    th Ano
+                each l in lista                
+                    tr
+                        td= l.laureates.firstname + ' ' + l.laureates.surname
+                        td= l.category
+                        td= l.year
+        address.margin-tb
+                a(href="http://localhost:3000/") Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 8 App

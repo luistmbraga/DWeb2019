@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Categorias de Prémios Nobel
+    table.w3-table-all
+      tr
+          th Categoria
+      each cat in lista
+          tr
+              td= cat._id
+    address.margin-tb
+          a(href="http://localhost:3000/") Voltar à página inicial
+    footer.w3-container
+          address Gerado por Trabalho Prático 8 App
+                        

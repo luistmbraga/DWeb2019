@@ -1,0 +1,41 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Detalhes
+        .w3-card-4
+            table.w3-table-all
+                    if lista.category
+                        tr
+                            th Categoria
+                            td= lista.category
+                    if lista.year
+                        tr
+                            th Ano
+                            td= lista.year
+                    if lista.overallMotivation
+                        tr
+                            th Contribuição do Trabalho
+                            td= lista.overallMotivation
+                    if lista.laureates.length > 0
+                        tr
+                            th Laureados
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Id
+                                        th Nome
+                                        th Contribuição Individual
+                                        th Share
+                                    each l in lista.laureates
+                                        tr
+                                            td= l.id
+                                            td= l.firstname + ' ' + l.surname
+                                            td= l.motivation
+                                            td= l.share
+                                           
+        address.margin-tb
+                a(href="/prizes/#"+lista._id) Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho Prático 8 App
