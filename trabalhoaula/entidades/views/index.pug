@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Entidades
+    table.w3-table-all
+      tr
+          th Designacao
+          th Sigla
+          th Internacional
+          th SIOE
+          th Estado
+          th id
+          th Operações
+      each a in lista
+          tr
+              td= a.designacao
+              td= a.sigla
+              td= a.internacional
+              td= a.sioe
+              td= a.estado
+              td= a.id
+              td
+                  a(href="/" + a.id) Detalhes
+    address.margin-tb
+          a(href="http://localhost:3000/") Voltar à página inicial
+    footer.w3-container
+          address Gerado por Trabalho Aula
+                        

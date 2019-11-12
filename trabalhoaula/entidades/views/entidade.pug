@@ -1,0 +1,64 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Detalhes
+        .w3-card-4
+            table.w3-table-all
+                    tr
+                        th Estado
+                        td= de.estado                    
+                    tr
+                        th Sigla
+                        td= de.sigla                    
+                    tr
+                        th SIOE
+                        td= de.sioe                    
+                    tr
+                        th Designacao
+                        td= de.designacao
+                    if t.length > 0
+                        tr
+                            th Tipologias
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Sigla
+                                        th Designacao
+                                        th Id
+                                    each l in t
+                                        tr
+                                            td= l.sigla
+                                            td= l.designacao
+                                            td= l.id
+                    if d.length > 0
+                        tr
+                            th Dono
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Codigo
+                                        th Titulo                                       
+                                    each l in d
+                                        tr
+                                            td= l.codigo
+                                            td= l.titulo
+                    if p.length > 0
+                        tr
+                            th Participantes
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Tipo Participante
+                                        th Codigo
+                                        th Titulo
+                                    each l in p
+                                        tr
+                                            td= l.tipoPar
+                                            td= l.codigo
+                                            td= l.titulo                                           
+        address.margin-tb
+                a(href="/") Voltar à página inicial
+        footer.w3-container
+          address Gerado por Trabalho aula
