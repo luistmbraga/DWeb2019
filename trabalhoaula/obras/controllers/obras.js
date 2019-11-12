@@ -24,7 +24,7 @@ module.exports.listarCompositorDuracao = (com,dur) => {
 
 module.exports.listarPeriodo = per => {
     //return Obra.aggregate([{$match: {periodo: per}}]).exec()
-    return Obra.find({perido: per}).exec()
+    return Obra.find({periodo: per}).exec()
 }
 
 module.exports.listarCompositores = () => {
