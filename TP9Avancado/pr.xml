@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP9</keyname>
+        <title>Trabalho Prático 9</title>
+        <subtitle>Implementação do comando mongoimport em NodeJs</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>12 de Novembro de 2019</bdate>
+        <edate>19 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Na aula do dia 12 de Novembro de 2019 foi dado como tpc extra a resolução de um exercício que consistisse 
+            em montar uma pequena aplicação que fosse equivalente ao comando mongoimport do MongoDB.             
+        </p>
+        <p>
+            Executar a aplicação usando "node mongoimport.js --db dbName --collection collectionName --file fileName.json"
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP9Avancado/mongoimport.js">Implementação do comando mongoimport em NodeJs</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP9Avancado/pr.html">Manifesto (html)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP9Avancado/pr.xml">Manifesto (xml)</deliverable>
+    </deliverables>
+</pr>
