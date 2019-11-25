@@ -13,8 +13,8 @@ block content
             input.w3-input.w3-cell.w3-border(type="text" name="desc")
           .w3-cell-row
             label.w3-cell Ficheiro:
-            input.w3-input.w3-cell(type="file" name="ficheiro")
-      button.w3-button.w3-round-large.w3-indigo(id='mais1') +1
+            input.w3-input.w3-cell(type="file" name="ficheiro" required multiple)
+      //button.w3-button.w3-round-large.w3-indigo(id='mais1') +1
       input.w3-input(type="submit" value="Enviar")
  
   .w3-card-4.modal(id='display')
