@@ -62,7 +62,7 @@ router.post('/ficheiros', upload.array('ficheiro'), function(req, res){
 
     let novoFicheiro = new Ficheiro({
       data: data.toISOString(),
-      desc: req.body.desc[i],
+      desc: req.body.desc,
       name: req.files[i].originalname,
       path: newPath,
       mimetype: req.files[i].mimetype,
