@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pr>
+    <metadata>
+        <keyname>DAW1920_TP10</keyname>
+        <title>Trabalho Prático 10</title>
+        <subtitle>Download e upload de ficheiros numa página web</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>19 de Novembro de 2019</bdate>
+        <edate>26 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Este trabalho foi proposto como uma continuação do trabalho que estava a ser feito em aula. Em aula fez-se 
+            upload e download de ficheiros, contudo apenas era possível realizar um upload de cada vez e este trabalho 
+            prático consistia em alterar o trabalho de forma a ser possível o upload de múltiplos ficheiros de uma só vez.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP10/gficheiros">Directoria com a implementação do servidor de páginas (Express)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP10/pr.html">Manifesto (html)</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TP10/pr.xml">Manifesto (xml)</deliverable>
+    </deliverables>
+</pr>
