@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TesteFinal</keyname>
+        <title>Teste Final de Desenvolvimento de Aplicações WEB</title>
+        <subtitle>Teste</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>16 de Janeiro de 2020 - 9h</bdate>
+        <edate>16 de Janeiro de 2020 - 12h</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            No primeiro exercício, comecei por fazer a passagem do ficheiro Arquivo de Musica
+            do formato xml para json. Depois disto, importei o ficheiro para o mongo com o nome da base de dados igual a "arquivoMusicas" e nome da collection "musicas", 
+            com o comando "mongoimport -d arquivoMusicas -c musicas --jsonArray arquivoMusicas.json"
+            Implementei o "musicas.js" no models ao mesmo que examinava os campos do ficheiro .xml no editor "Oxygen". Feito isto parti para a elaboração do "musicas.js" no 
+            controllers. Aqui implementei as queries de acesso à base de dados, tendo em conta as queries pedidas no enunciado. Posto isto, elaborei o "api.js" no routes que 
+            responde às queries pedidas, usando as funções implementadas no "musicas.json" do controllers.
+        </p>
+        <p>
+            No segundo exercício, realizei as queries pedidas. De seguida, analisei que dados é que teria de requisitar à API fornecida e depois elaborei as queries que se encontram 
+            no ficheiro "index.js". Depois elaborei os ficheiros "index.js" (lista de entidades), "entidade.pug" (dados de uma entidade) e "tipologia.pug" (dados de uma tipologia) que se encontram na view.
+        </p>
+        <p>
+            Como inicializar: 1- escrever "npm i"; 2- "npm start" 
+            Para o primeiro exercício realizar: "npm i mongoose --save" e os pedidos atendem em "http://localhost:3016"
+            Para o segundo exercício realizar: "npm i axios --save" e os pedidos atendem em "http://localhost:3017"
+        </p>
+        <p>
+            Respostas às queries:
+            1- 546 
+            2- Administração Pública, Autoridades de supervisão e fiscalização
+            3- processo com o codigo: 400.10.056 e titulo: Registo nacional de condutores
+            4- dona do processo com codigo: 750.20.601 e titulo: Realização de atividades de formação e treino animal
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TESTE/TesteAPI">Directoria com o primeiro exercício</deliverable>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TESTE/TesteInterface">Directoria com o segundo exercício</deliverable>
+    </deliverables>
+</pr>

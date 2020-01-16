@@ -3,35 +3,38 @@ block content
     .w3-container
         header.w3-container
                 h1 
-                    b Detalhes de Tipologia
+                    b Detalhes da Entidade
         .w3-card-4
             table.w3-table-all
                     tr
                         th Estado
-                        td= dt.estado                    
+                        td= de.estado                    
                     tr
                         th Sigla
-                        td= dt.sigla                                       
+                        td= de.sigla                    
+                    tr
+                        th SIOE
+                        td= de.sioe                    
                     tr
                         th Designacao
-                        td= dt.designacao
-                    if e.length > 0
+                        td= de.designacao
+                    if t.length > 0
                         tr
-                            th Entidades
+                            th Tipologias
                             td
                                 table.w3-table-all
                                     tr
                                         th Sigla
                                         th Designacao
                                         th Id
-                                        th Detalhes da Entidade
-                                    each l in e
+                                        th Detalhes da topologia
+                                    each l in t
                                         tr
                                             td= l.sigla
                                             td= l.designacao
                                             td= l.id
                                             td
-                                                a(href="/" + l.id) Detalhes
+                                                a(href="/tip/" + l.id) Detalhes 
                     if d.length > 0
                         tr
                             th Dono
@@ -62,6 +65,5 @@ block content
                 a(href="/") Voltar à página inicial
         address.margin-tb
                 a(href='javascript:history.back()') Página anterior
-                //button(onclick='goBack()') Voltar à página anterior
         footer.w3-container
-          address Gerado por Teste Treino
+          address Gerado por Teste DWEB
