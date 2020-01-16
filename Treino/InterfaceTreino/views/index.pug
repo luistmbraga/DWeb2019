@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Teste Dweb 2020
+    table.w3-table-all
+      tr
+          th Estado
+          th Sigla
+          th Designação
+          th id
+          th Operações
+      each a in lista
+          tr
+              td= a.estado
+              td= a.sigla
+              td= a.designacao
+              td= a.id
+              td
+                  a(href="/" + a.id) Detalhes
+    footer.w3-container
+          address Gerado por Teste Treino
+                        

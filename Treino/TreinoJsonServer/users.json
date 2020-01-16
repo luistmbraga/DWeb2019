@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "_id": "u0", 
+            "nome": "Manuel José da Silva Machado", 
+            "email":"manuel@gmail.com", 
+            "password": "manuel"
+        },
+        {
+            "_id": "u1", 
+            "nome": "José Dias Vieira", 
+            "email":"vieira@gmail.com", 
+            "password": "vieira"
+        },
+        {
+            "_id": "u2", 
+            "nome": "Manuel Silva ", 
+            "email":"silva@gmail.com", 
+            "password": "silva"
+        },
+        {
+            "_id": "u3", 
+            "nome": "Joaquim Esteves", 
+            "email":"esteves@gmail.com", 
+            "password": "esteves"
+        }
+    ]
+}

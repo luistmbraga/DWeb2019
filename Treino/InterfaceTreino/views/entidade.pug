@@ -1,0 +1,43 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container
+                h1 
+                    b Detalhes de Entidade
+        .w3-card-4
+            table.w3-table-all
+                    tr
+                        th Estado
+                        td= eI.estado                    
+                    tr
+                        th Sigla
+                        td= eI.sigla                    
+                    tr
+                        th SIOE
+                        td= eI.sioe                    
+                    tr
+                        th Designacao
+                        td= eI.designacao
+                    if eT.length > 0
+                        tr
+                            th Tipologias
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Sigla
+                                        th Designacao
+                                        th Id
+                                        th Detalhes da Tipologia
+                                    each l in eT
+                                        tr
+                                            td= l.sigla
+                                            td= l.designacao
+                                            td= l.id
+                                            td   
+                                                a(href="/" + l.id) Detalhes                                      
+        address.margin-tb
+                a(href="/") Voltar à página inicial
+        address.margin-tb
+                a(href='javascript:history.back()') Página anterior
+        footer.w3-container
+          address Gerado por Teste Treino

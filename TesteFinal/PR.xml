@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata>
+        <keyname>DAW1920_TesteFinal</keyname>
+        <title>Teste Final de Desenvolvimento de Aplicações WEB</title>
+        <subtitle>Teste</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>16 de Janeiro de 2020 - 9h</bdate>
+        <edate>16 de Janeiro de 2020 - 12h</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82088</identifier>
+            <name>Luís Tiago Machado Braga</name>
+            <email>a82088@alunos.uminho.pt</email>
+            <git>https://github.com/BragaMann</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p></p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/BragaMann/DWeb2019/tree/master/TesteFinal">Directoria com o teste final</deliverable>
+    </deliverables>
+</pr>
