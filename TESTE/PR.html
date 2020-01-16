@@ -45,14 +45,52 @@
       <hr>
       <div class="w3-container">
          <h3><b>Abstract:</b></h3>
-         <p> ola esta referencia <a href="https://www.google.com" target="_blank">google</a></p>
+         <p>
+            No primeiro exercício, comecei por fazer a passagem do ficheiro Arquivo de Musica
+            do formato xml para json. Depois disto, importei o ficheiro para o mongo com o nome
+            da base de dados igual a "arquivoMusicas" e nome da collection "musicas", 
+            com o comando "mongoimport -d arquivoMusicas -c musicas --jsonArray arquivoMusicas.json"
+            Implementei o "musicas.js" no models ao mesmo que examinava os campos do ficheiro
+            .xml no editor "Oxygen". Feito isto parti para a elaboração do "musicas.js" no 
+            controllers. Aqui implementei as queries de acesso à base de dados, tendo em conta
+            as queries pedidas no enunciado. Posto isto, elaborei o "api.js" no routes que 
+            responde às queries pedidas, usando as funções implementadas no "musicas.json" do
+            controllers.
+            
+         </p>
+         <p>
+            No segundo exercício, realizei as queries pedidas. De seguida, analisei que dados
+            é que teria de requisitar à API fornecida e depois elaborei as queries que se encontram
+            
+            no ficheiro "index.js". Depois elaborei os ficheiros "index.js" (lista de entidades),
+            "entidade.pug" (dados de uma entidade) e "tipologia.pug" (dados de uma tipologia)
+            que se encontram na view.
+            
+         </p>
+         <p>
+            Como inicializar: 1- escrever "npm i"; 2- "npm start" 
+            Para o primeiro exercício realizar: "npm i mongoose --save" e os pedidos atendem em
+            "http://localhost:3016"
+            Para o segundo exercício realizar: "npm i axios --save" e os pedidos atendem em "http://localhost:3017"
+            
+         </p>
+         <p>
+            Respostas às queries:
+            1- 546 
+            2- Administração Pública, Autoridades de supervisão e fiscalização
+            3- processo com o codigo: 400.10.056 e titulo: Registo nacional de condutores
+            4- dona do processo com codigo: 750.20.601 e titulo: Realização de atividades de formação
+            e treino animal
+            
+         </p>
       </div>
       <hr>
       <hr>
       <div class="w3-container bottom">
          <h3><b>Deliverables:</b></h3>
          <ol>
-            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TesteFinal/TP8App" target="_blank">Directoria com o teste final</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TESTE/TesteAPI" target="_blank">Directoria com o primeiro exercício</a></li>
+            <li><a href="https://github.com/BragaMann/DWeb2019/tree/master/TESTE/TesteInterface" target="_blank">Directoria com o segundo exercício</a></li>
          </ol>
       </div>
    </body>
